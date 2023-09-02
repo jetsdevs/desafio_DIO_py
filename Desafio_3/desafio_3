@@ -1,0 +1,11 @@
+# Entrada de dados
+saldo_total = int(input("Informe o saldo total: "))
+valor_saque = int(input("Informe o valor do saque: "))
+
+# TODO: Criar as condições necessárias para impressão da saída, vide tabela de exemplos.
+
+if saldo_total >= valor_saque:
+    saldo_total = saldo_total - valor_saque
+    print(f"Saque realizado com sucesso. Novo saldo: {saldo_total} ")
+elif saldo_total < valor_saque:
+    print("Saldo insuficiente. Saque nao realizado!")
